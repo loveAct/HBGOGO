@@ -40,7 +40,7 @@
 		071386B4A997BED59F51F21C /* Pods-HBGOGO_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HBGOGO_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HBGOGO_Example/Pods-HBGOGO_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		19227BF9AE314BC6BCC7565C /* Pods_HBGOGO_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HBGOGO_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4906807990EB2987593C84C4 /* Pods-HBGOGO_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HBGOGO_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-HBGOGO_Example/Pods-HBGOGO_Example.release.xcconfig"; sourceTree = "<group>"; };
-		4C751AD5B584935DD47B99BC /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		4C751AD5B584935DD47B99BC /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		6003F58A195388D20070C39A /* HBGOGO_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HBGOGO_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6003F58D195388D20070C39A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		6003F58F195388D20070C39A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -61,11 +61,11 @@
 		6003F5BB195388D20070C39A /* Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Tests.m; sourceTree = "<group>"; };
 		606FC2411953D9B200FFA9A0 /* Tests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Tests-Prefix.pch"; sourceTree = "<group>"; };
 		71719F9E1E33DC2100824A3D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		7A4B51BC1AA2E75B913746C3 /* HBGOGO.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = HBGOGO.podspec; path = ../HBGOGO.podspec; sourceTree = "<group>"; };
+		7A4B51BC1AA2E75B913746C3 /* HBGOGO.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = HBGOGO.podspec; path = ../HBGOGO.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		873B8AEA1B1F5CCA007FD442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		891377013017ABF92C779FCA /* Pods_HBGOGO_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HBGOGO_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A1813BADEAD80285BD3E439F /* Pods-HBGOGO_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HBGOGO_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HBGOGO_Tests/Pods-HBGOGO_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		C3F72F8E70139C1FC6482D7A /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		C3F72F8E70139C1FC6482D7A /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		D43024263CE238D32EB0C227 /* Pods-HBGOGO_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HBGOGO_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-HBGOGO_Tests/Pods-HBGOGO_Tests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -321,10 +321,12 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-HBGOGO_Example/Pods-HBGOGO_Example-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/HBGOGO/HBGOGO.framework",
+				"${BUILT_PRODUCTS_DIR}/TRUNetworking/TRUNetworking.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/HBGOGO.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/TRUNetworking.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;

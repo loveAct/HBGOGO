@@ -4,6 +4,7 @@ platform :ios, '8.0'
 
 target 'HBGOGO_Example' do
   pod 'HBGOGO', :path => '../'
+  pod 'TRUNetworking', :path => '../../../Lib/TRUNetworking'
 
   target 'HBGOGO_Tests' do
     inherit! :search_paths
